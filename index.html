@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100817">
+  <meta name="description" content="Arushi's retro RPG developer portfolio — explore projects, skills, and quests.">
+  <title>ARUSHI.EXE — Developer Adventure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Arushi home"><span class="brand-mark">A</span> ARUSHI<span class="pink">.EXE</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#character">TRAINER</a>
+      <a href="#quests">QUESTS</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <button id="sound-toggle" class="small-button" type="button" aria-pressed="false">♪ SOUND: OFF</button>
+  </header>
+
+  <main>
+    <section class="hero panel">
+      <div class="hero-copy">
+        <p class="eyebrow">PLAYER 001 · DEVELOPER WORLD</p>
+        <h1>WELCOME TO<br><span class="gradient-text">ARUSHI.EXE</span></h1>
+        <p class="hero-description">A computer science student on a quest to build useful things, level up her skills, and turn ideas into working software.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">▶ EXPLORE PROJECTS</a>
+          <a class="button" href="https://github.com/ArushiShetty" target="_blank" rel="noreferrer">↗ GITHUB PROFILE</a>
+        </div>
+        <p class="tiny-note">No fake XP. Just projects, learning, and progress.</p>
+      </div>
+      <div class="pixel-scene" aria-label="Decorative pixel-inspired night scene">
+        <div class="moon"></div><div class="star s1">✦</div><div class="star s2">✧</div><div class="star s3">✦</div>
+        <div class="mountain m1"></div><div class="mountain m2"></div>
+        <div class="pixel-house"><span></span></div>
+        <div class="ground"></div>
+        <div class="creature" aria-hidden="true">◕ᴗ◕</div>
+        <div class="scene-caption">NEW GAME<br><span>BUILD · LEARN · REPEAT</span></div>
+      </div>
+    </section>
+
+    <section id="character" class="section">
+      <div class="section-heading"><span class="pixel-icon">◆</span><div><p class="eyebrow">CHARACTER PROFILE</p><h2>TRAINER CARD</h2></div></div>
+      <div class="grid two-col">
+        <article class="panel trainer-card">
+          <div class="avatar" aria-hidden="true"><span>A</span></div>
+          <div class="trainer-info">
+            <p class="eyebrow">PLAYER NAME</p><h3>Arushi Shetty</h3>
+            <p>Computer Science & Data Science</p>
+            <p class="muted">Bengaluru, India</p>
+            <div class="chips"><span>Problem Solver</span><span>Builder</span><span>Always Learning</span></div>
+          </div>
+          <div class="level-box"><span>LVL</span><strong>UP</strong><small>Progress is earned</small></div>
+        </article>
+        <article class="panel">
+          <p class="eyebrow">SKILL TREE</p><h3>Current toolkit</h3>
+          <div class="skill-row"><span>Python</span><div class="meter"><i style="width:68%"></i></div><small>Learning</small></div>
+          <div class="skill-row"><span>JavaScript</span><div class="meter"><i style="width:60%"></i></div><small>Building</small></div>
+          <div class="skill-row"><span>React</span><div class="meter"><i style="width:58%"></i></div><small>Building</small></div>
+          <div class="skill-row"><span>SQL</span><div class="meter"><i style="width:55%"></i></div><small>Practicing</small></div>
+          <p class="tiny-note">Bars are illustrative self-assessments, not test scores. Edit them to reflect your current comfort level.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="quests" class="section">
+      <div class="section-heading"><span class="pixel-icon">✦</span><div><p class="eyebrow">ACTIVE OBJECTIVES</p><h2>QUEST BOARD</h2></div></div>
+      <div class="grid three-col">
+        <article class="panel quest-card"><span class="quest-tag">MAIN QUEST</span><h3>Ship useful projects</h3><p>Build, test, document, and deploy software that solves a real problem.</p><label class="checkline"><input type="checkbox" data-quest="ship"> Mark complete</label></article>
+        <article class="panel quest-card"><span class="quest-tag">TRAINING</span><h3>Strengthen DSA</h3><p>Practice problem-solving and explain the reasoning behind each solution.</p><label class="checkline"><input type="checkbox" data-quest="dsa"> Mark complete</label></article>
+        <article class="panel quest-card"><span class="quest-tag">SIDE QUEST</span><h3>Learn in public</h3><p>Write clear READMEs, share progress, and keep a truthful record of what works.</p><label class="checkline"><input type="checkbox" data-quest="public"> Mark complete</label></article>
+      </div>
+      <p class="tiny-note">Quest checkmarks save in this browser only. They do not change GitHub contributions or claim verified achievements.</p>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading"><span class="pixel-icon">▣</span><div><p class="eyebrow">FIELD NOTES</p><h2>PROJECT SELECT</h2></div></div>
+      <p class="section-intro">These are starter cards. Update the descriptions and repository links to match the real state of each project before publishing.</p>
+      <div class="grid two-col">
+        <article class="panel project-card">
+          <div class="project-top"><span class="project-symbol">盾</span><span class="status status-progress">IN DEVELOPMENT</span></div>
+          <h3>VERITAS</h3><p class="project-type">Digital safety platform</p>
+          <p>A concept for tools that help users review potentially unsafe online content and manage reports securely.</p>
+          <div class="chips"><span>React</span><span>TypeScript</span><span>Flask</span></div>
+          <button class="button project-details" data-project="veritas" type="button">VIEW QUEST LOG ↗</button>
+        </article>
+        <article class="panel project-card">
+          <div class="project-top"><span class="project-symbol">☷</span><span class="status status-planning">PLANNING / BUILD</span></div>
+          <h3>OBSCURA</h3><p class="project-type">Travel app concept</p>
+          <p>A travel-focused project concept. Replace this text with the implemented features, architecture, and current limitations.</p>
+          <div class="chips"><span>Update stack</span><span>Document honestly</span></div>
+          <button class="button project-details" data-project="obscura" type="button">VIEW QUEST LOG ↗</button>
+        </article>
+        <article class="panel project-card">
+          <div class="project-top"><span class="project-symbol">◈</span><span class="status status-progress">IN DEVELOPMENT</span></div>
+          <h3>SIGN LANGUAGE DETECTION</h3><p class="project-type">Computer vision / deep learning</p>
+          <p>A team project exploring visual sign recognition. Document the dataset, model, evaluation, and supported signs once verified.</p>
+          <div class="chips"><span>Python</span><span>MediaPipe</span><span>Deep Learning</span></div>
+          <button class="button project-details" data-project="sign" type="button">VIEW QUEST LOG ↗</button>
+        </article>
+        <article class="panel project-card">
+          <div class="project-top"><span class="project-symbol">⌘</span><span class="status status-progress">AGENT PROJECT</span></div>
+          <h3>AUTONOMOUS TEST AGENT</h3><p class="project-type">Autonomous QA / developer tooling</p>
+          <p>An agent-based QA project focused on exploring how software tests can be planned, executed, and reported with less manual effort. Update this summary to reflect the actual implemented workflow.</p>
+          <div class="chips"><span>JavaScript</span><span>Node.js</span><span>AI Agents</span></div>
+          <button class="button project-details" data-project="agent" type="button">VIEW QUEST LOG ↗</button>
+        </article>
+        <article class="panel project-card">
+          <div class="project-top"><span class="project-symbol">⌕</span><span class="status status-planning">RESEARCH PLATFORM</span></div>
+          <h3>LEXICON-GATE</h3><p class="project-type">Research / knowledge platform</p>
+          <p>A research-oriented platform concept. Replace this with the real problem statement, implemented features, data flow, and your individual contribution.</p>
+          <div class="chips"><span>Research</span><span>Web Platform</span><span>Update stack</span></div>
+          <button class="button project-details" data-project="lexicon" type="button">VIEW QUEST LOG ↗</button>
+        </article>
+        <article class="panel project-card add-card">
+          <span class="project-symbol">＋</span><h3>YOUR NEXT BUILD</h3><p>Add a project when you have a meaningful milestone to show: working demo, tests, screenshots, or a clear technical write-up.</p>
+          <a class="text-link" href="https://github.com/ArushiShetty?tab=repositories" target="_blank" rel="noreferrer">Browse repositories ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading"><span class="pixel-icon">★</span><div><p class="eyebrow">COLLECTION</p><h2>ACHIEVEMENTS</h2></div></div>
+      <div class="grid three-col">
+        <article class="panel achievement"><span>♧</span><h3>First Commit</h3><p>Every project starts somewhere.</p></article>
+        <article class="panel achievement"><span>⚒</span><h3>Bug Hunter</h3><p>Debugging is part of building.</p></article>
+        <article class="panel achievement"><span>♡</span><h3>Open Source Mindset</h3><p>Readable code and honest documentation matter.</p></article>
+      </div>
+      <p class="tiny-note">These are decorative RPG-style labels, not claims of official awards or completed milestones.</p>
+    </section>
+
+    <section id="contact" class="section contact-panel panel">
+      <p class="eyebrow">END OF DEMO — YOUR MOVE</p><h2>LET'S BUILD SOMETHING.</h2>
+      <p>Have an interesting project, internship opportunity, or idea to collaborate on?</p>
+      <div class="hero-actions">
+        <a class="button primary" href="https://github.com/ArushiShetty" target="_blank" rel="noreferrer">FIND ME ON GITHUB ↗</a>
+        <a class="button" href="mailto:REPLACE_WITH_YOUR_EMAIL">SEND A MESSAGE ↗</a>
+      </div>
+      <p class="tiny-note">Replace the email placeholder before publishing.</p>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> ARUSHI.EXE</span><span>MADE WITH HTML · CSS · JAVASCRIPT</span><a href="#top">BACK TO TOP ↑</a></footer>
+
+  <dialog id="project-dialog" class="project-dialog">
+    <form method="dialog"><button class="dialog-close" aria-label="Close">×</button></form>
+    <p class="eyebrow">QUEST LOG</p><h2 id="dialog-title">Project</h2><p id="dialog-body"></p>
+    <p class="tiny-note">Replace this starter text with verified implementation details and link to the matching public repository.</p>
+    <a id="dialog-link" class="button primary" href="https://github.com/ArushiShetty?tab=repositories" target="_blank" rel="noreferrer">OPEN REPOSITORIES ↗</a>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
